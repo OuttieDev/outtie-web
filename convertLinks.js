@@ -17,7 +17,7 @@ export function convertLink(link) {
 
 
 //function that loops through href tags and converts them to proper outtie api calls
-export function convertAllLinks() {
+function convertAllLinks() {
     //get list of all links on page
     let links = document.getElementsByTagName("a");
 
@@ -44,3 +44,7 @@ export function convertAllLinks() {
 
 //call function when page loads, if running standalone to convert all 
 // window.onload = function () { convertAllLinks();}
+
+export function initializeOuttie() {
+    window.onload = function () { convertAllLinks(); }
+}
