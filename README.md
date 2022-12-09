@@ -58,7 +58,7 @@ npm install outtie-web
 yarn add outtie-web
 ```
 
-#### For script-based initialization or use in no-code sites, you can add our sdk script to the root of your wenbsite:
+#### For script-based initialization or use in no-code sites, you can add our SDK script to the root of your wenbsite:
 
 ```html
 <script
