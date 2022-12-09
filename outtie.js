@@ -6,7 +6,7 @@ export function convertLink(link, clientId, sdkKey) {
     let href = link.getAttribute("href");
 
     //convert href to link with API call
-    let convertedLink = "https://api.outtie.io/create_link?sdkKey=" + process.env.SDK_KEY + "&clientId=" + process.env.CLIENT_ID + "&redirect=" + href;
+    let convertedLink = "https://api.outtie.io/create_link?sdkKey=" + sdkKey + "&clientId=" + clientId + "&redirect=" + href;
 
     //replace href with api call
     link.setAttribute("href", convertedLink);
