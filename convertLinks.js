@@ -1,10 +1,7 @@
-const dotenv = require('dotenv');
-
-//load environment variables
-dotenv.config();
+import getModuleLocation from "debundle/src/utils/getModuleLocation";
 
 //convert single link to outtie api call
-export function convertLink(link) {
+export function convertLink(link, clientId, sdkKey) {
     //get href attribute of link
     let href = link.getAttribute("href");
 
@@ -17,7 +14,7 @@ export function convertLink(link) {
 
 
 //function that loops through href tags and converts them to proper outtie api calls
-function convertAllLinks() {
+function convertAllLinks(sdkKey, clientId) {
     //get list of all links on page
     let links = document.getElementsByTagName("a");
 
@@ -28,7 +25,7 @@ function convertAllLinks() {
 
 
         //convert href to link with API call
-        let convertedLink = "https://api.outtie.io/create_link?sdkKey=" + process.env.SDK_KEY + "&clientId=" + process.env.CLIENT_ID + "&redirect=" + href;
+        let convertedLink = "https://api.outtie.io/create_link?sdkKey=" + sdkKey + "&clientId=" + clientId + "&redirect=" + href;
 
         //replace href with api call
         element.setAttribute("href", convertedLink);
@@ -45,6 +42,9 @@ function convertAllLinks() {
 //call function when page loads, if running standalone to convert all 
 // window.onload = function () { convertAllLinks();}
 
-export function initializeOuttie() {
-    window.onload = function () { convertAllLinks(); }
+export function initializeOuttie(sdkKey, clientId) {
+    window.onload = function () { convertAllLinks(sdkKey, clientId); }
 }
+
+//export function to convert all links on page
+export default initializeOuttie;
