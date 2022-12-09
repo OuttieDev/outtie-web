@@ -1,6 +1,6 @@
 {
   "name": "outtie-web",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Outtie enables websites and mobile apps to monetize link clicks by their users with just a few lines of code",
   "main": "convertLinks.js",
   "scripts": {

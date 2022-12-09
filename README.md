@@ -33,6 +33,7 @@ A few of the things you can do with Outtie web right now:
 
 * Automatically create affiliate links and redirect users when they click a link
 * Convert individual links to affiliate links and redirect users to the converted link
+* **More developer features coming soon...**
 <!-- * Open links natively within your app or in the Safari app (to enable browser cookies) -->
 <!-- * Track unique links for users -->
 <!-- * View clicks, sales, and commissions -->
@@ -40,9 +41,9 @@ A few of the things you can do with Outtie web right now:
 
 ## Requirements
 
-The Outtie web SDK requires nodeJS 16.0.0 to integrate into code-based websites. For script-based initialization or no-code integration, no nodeJS is necessary. 
+The Outtie web SDK requires nodeJS 16.0.0 to integrate into code-based websites. For script-based initialization or no-code integration, no NodeJS is necessary. 
 
-####**For script-based initialization or no-code sites, you can add our sdk script to your site seen below:**
+
 
 
 
@@ -57,7 +58,7 @@ npm install outtie-web
 yarn add outtie-web
 ```
 
-####**For script-based initialization or use in no-code sites, you can add our sdk script to the root of your wenbsite:**
+#### **For script-based initialization or use in no-code sites, you can add our sdk script to the root of your wenbsite:**
 
 ```html
 <script
@@ -92,7 +93,7 @@ outtie.convertLink(link, clientId, sdkKey)
 That's it! It's really that simple. 
 
 
-####More developer functions coming soon...
+
 
 
 
