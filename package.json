@@ -1,0 +1,25 @@
+{
+  "name": "outtie-web",
+  "version": "1.0.1",
+  "description": "Outtie enables websites and mobile apps to monetize link clicks by their users with just a few lines of code",
+  "main": "convertLinks.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OuttieDev/outtie-web.git"
+  },
+  "keywords": [
+    "node",
+    "js",
+    "web",
+    "outtie"
+  ],
+  "author": "Outtie.io",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OuttieDev/outtie-web/issues"
+  },
+  "homepage": "https://github.com/OuttieDev/outtie-web#readme"
+}

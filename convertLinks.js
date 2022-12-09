@@ -36,11 +36,7 @@ function convertAllLinks(sdkKey, clientId) {
 
 }
 
-// example link
-// Example: https://api.outtie.io/create_link?sdkKey=ljLuuEFFWVyOmP8ThCHsFQ&clientId=oOT55l7kNvEeZDvVLPkIIQ&redirect=https://www.aloyoga.com”
-
-//call function when page loads, if running standalone to convert all 
-// window.onload = function () { convertAllLinks();}
+// Example: https://api.outtie.io/create_link?sdkKey={sdkKey}&clientId={clientId}&redirect=https://www.aloyoga.com
 
 export function initializeOuttie(sdkKey, clientId) {
     window.onload = function () { convertAllLinks(sdkKey, clientId); }
