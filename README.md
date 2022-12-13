@@ -11,7 +11,7 @@ The Outtie web SDK makes it quick and easy to monetize URL taps in your web app 
 
 Earn up to 10% commissions from 5,000+ popular brands like Skims, Ulta Beauty, Walmart, Macy's, Nordstrom, Bloomingdale's, Madewell, Alo Yoga, Bonobos, Adidas, and more. Simply integrate Outtie into your app with a few lines of code and start earning on link taps.
 
-Get started by creating a [🔑 Outtie SDK Key](https://google.com) and view our [📘 integration examples](#example) below.
+Get started by creating a [🔑 Outtie SDK Key -- Coming soon!](https://google.com) and view our [📘 integration examples](#usage) below.
 
 
 
