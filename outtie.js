@@ -23,17 +23,17 @@ function convertAllLinks(sdkKey, clientId) {
         //get href attribute of link
         let href = element.getAttribute("href");
 
+        if (href) {
+            if (href.includes("http") || href.includes("https")) {
+                //convert href to link with API call
+                let convertedLink = "https://api.outtie.io/create_link?sdkKey=" + sdkKey + "&clientId=" + clientId + "&redirect=" + href;
 
-        //convert href to link with API call
-        let convertedLink = "https://api.outtie.io/create_link?sdkKey=" + sdkKey + "&clientId=" + clientId + "&redirect=" + href;
-
-        //replace href with api call
-        element.setAttribute("href", convertedLink);
-
-    }); {
+                //replace href with api call
+                element.setAttribute("href", convertedLink);
+        }
+    };
+ }); {
     }
-
-
 }
 
 // Example: https://api.outtie.io/create_link?sdkKey={sdkKey}&clientId={clientId}&redirect=https://www.aloyoga.com
