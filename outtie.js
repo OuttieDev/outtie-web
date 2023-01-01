@@ -77,7 +77,7 @@ export function initializeSuite(sdkKey, clientId) {
   xhr.send();
 }
 
-export function initializeOuttie(sdkKey, clientId) {
+export function initialize(sdkKey, clientId) {
     window.onload = function () { initializeSuite(sdkKey, clientId); }
 }
 

@@ -81,13 +81,13 @@ import * as Outtie from 'outtie-web'
 To initialize Outtie and convert all of your web links by default, use the `initialize()` function with your generated `sdkKey` and `clientId`. You can generate these variables [[here]].
 
 ```javascript
-const outtie = Outtie.initialize(sdkKey, clientKey)
+Outtie.initialize(sdkKey, clientKey)
 ```
 
 
 #### OR, manually convert a Link to use however you'd like 
 ```javascript
-outtie.convertLink(link, clientId, sdkKey)
+Outtie.convertLink(link, clientId, sdkKey)
 ```
 
 That's it! It's really that simple. 

@@ -1,7 +1,7 @@
 {
   "name": "outtie-web",
-  "version": "1.0.9",
-  "description": "Outtie enables websites and mobile apps to monetize link clicks by their users with just a few lines of code",
+  "version": "1.1.1",
+  "description": "Outtie makes it easy for websites and mobile apps to convert their content into commissionable touch-points",
   "main": "outtie.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
