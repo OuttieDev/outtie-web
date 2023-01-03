@@ -61,13 +61,8 @@ export function initializeSuite(sdkKey, clientId) {
         // process each item element
         console.log(item.name)
         if (html.includes(String(item.name))) {
-          if (element.tagName.toLowerCase() === "a") {
-            console.log("The text is already contained within a link.");
-            convertAllLinks(sdkKey, clientId);
-          } else {
-            console.log('The string contains a word from the array');
-            html = html.split(item.name).join('<a href="https://api.outtie.io/create_link?sdkKey=ljLuuEFFWVyOmP8ThCHsFQ&clientId=oOT55l7kNvEeZDvVLPkIIQ&redirect=' + item.website + '">' + item.name + '</a>');
-          }
+          console.log('The string contains a word from the array');
+          html = html.split(item.name).join('<a href="https://api.outtie.io/create_link?sdkKey=ljLuuEFFWVyOmP8ThCHsFQ&clientId=oOT55l7kNvEeZDvVLPkIIQ&redirect=' + item.website + '">' + item.name + '</a>');
         }
       })
       element.innerHTML = html;
