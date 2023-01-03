@@ -53,15 +53,15 @@ export function initializeSuite(sdkKey, clientId) {
     // handle the response
     console.log(this.responseText);
     var data = JSON.parse(this.responseText);
-    var ps = document.querySelectorAll('p');
-    ps.forEach(function(p) {
-      // process each p element
-      var html = p.innerHTML;
+    var elements = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, span');
+    elements.forEach(function(element) {
+      // process each element
+      var html = element.innerHTML;
       data.forEach(function(item) {
         // process each item element
         console.log(item.name)
         if (html.includes(String(item.name))) {
-          if (p.tagName.toLowerCase() === "a") {
+          if (element.tagName.toLowerCase() === "a") {
             console.log("The text is already contained within a link.");
             convertAllLinks(sdkKey, clientId);
           } else {
@@ -70,7 +70,7 @@ export function initializeSuite(sdkKey, clientId) {
           }
         }
       })
-      p.innerHTML = html;
+      element.innerHTML = html;
     });
   };
 
