@@ -53,7 +53,7 @@ export function initializeSuite(sdkKey, clientId) {
     // handle the response
     console.log(this.responseText);
     var data = JSON.parse(this.responseText);
-    var elements = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, span');
+    var elements = document.querySelectorAll('p, h3, h4, h5, h6, span');
     elements.forEach(function(element) {
       // process each element
       var html = element.innerHTML;

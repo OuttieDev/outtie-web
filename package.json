@@ -1,6 +1,6 @@
 {
   "name": "outtie-web",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "Outtie makes it easy for websites and mobile apps to convert their content into commissionable touch-points",
   "main": "outtie.js",
   "scripts": {
